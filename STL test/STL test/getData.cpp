@@ -30,6 +30,7 @@ int getData::getIndex()
 		infile >> tmp;
 	}
 	index = tmp;
+	return index;
 }
 
 int getData::indexAccess()
@@ -39,6 +40,7 @@ int getData::indexAccess()
 
 getData::getData()
 {
+	inputdata();
 	getIndex();
 }
 
